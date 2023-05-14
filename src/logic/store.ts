@@ -8,3 +8,23 @@ export type UserStoreType = {
 export const userStore = writable<UserStoreType>({
 	user: null
 });
+
+export type ChatMessagePayload = {
+	author: string;
+	content: string;
+	$id: string;
+};
+
+export type ChatMessage = {
+	author: string;
+	content: string;
+	id: string;
+};
+
+export type ChatStoreType = {
+	messages: ChatMessage[];
+};
+
+export const chatStore = writable<ChatStoreType>({
+	messages: []
+});

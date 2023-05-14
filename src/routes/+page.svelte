@@ -50,7 +50,7 @@
 	}
 </script>
 
-<div class="container mx-auto pt-10">
+<div class="container mx-auto pt-10 h-full overflow-y-auto flex flex-col">
 	<h1 class="text-2xl">Lets discover the power of AppWrite</h1>
 
 	<section class="mt-10 ml-5">
@@ -66,7 +66,7 @@
 		</div>
 	</section>
 
-	<section class="mt-10 ml-5">
+	<section class="mt-10 ml-5 flex flex-col flex-1">
 		<h2 class="text-xl mb-3">Files</h2>
 		<input type="file" multiple bind:files={filesToUploadRaw} />
 		<button class="btn btn-secondary" on:click={uploadFiles}>Upload</button>

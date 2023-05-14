@@ -19,9 +19,15 @@
 	});
 </script>
 
-<div>
-	<header class="p-4 mx-auto container">
-		<a class="btn btn-ghost" href="/">AppWrite playground</a>
+<div class="h-screen overflow-hidden">
+	<header class="p-4 mx-auto container flex justify-between">
+		<div>
+			<a class="btn btn-ghost" href="/">AppWrite playground</a>
+		</div>
+		<div>
+			<a class="btn btn-ghost" href="/chat">Chat</a>
+			<a class="btn btn-ghost" href="/profile">Profile</a>
+		</div>
 	</header>
 	<slot />
 </div>
